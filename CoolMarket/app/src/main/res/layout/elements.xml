@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/editTextStoreName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cool Market"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxCola"
+        android:layout_below="@id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cola"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_regular"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBoxSprite"
+        android:layout_below="@id/checkBoxCola"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sprite"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_regular"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBox7UP"
+        android:layout_below="@id/checkBoxSprite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="7UP"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_regular"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBoxFanta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/checkBox7UP"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Fanta"
+        android:textSize="18sp"></CheckBox>
+
+    <TextView
+        android:id="@+id/editTextDeliveryLocation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/checkBoxFanta"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Select delivery way"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:inputType="none"
+        android:textColor="@color/black"
+        android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:id="@+id/layoutDeliveryOptions"
+        android:layout_below="@id/editTextDeliveryLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonPickup"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Pickup"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioButtonHomeDelivery"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Home Delivery"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"></RadioButton>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutDeliveryOptions"
+        android:layout_marginTop="53dp"
+        android:text="Place Order"
+        android:fontFamily="@font/roboto_regular"></Button>
+
+    <ImageButton
+        android:id="@+id/imageButtonExit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Exit"></ImageButton>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Weather24</string>
+    <string name="search"><b>Search</b></string>
+</resources>

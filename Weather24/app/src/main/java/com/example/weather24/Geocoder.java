@@ -50,7 +50,7 @@ public class Geocoder extends Service {
         try {
             Thread geoThread = new Thread(new HttpsRequest(handler,
                     "https://geocode.search.hereapi.com/v1/geocode?",
-                    "apiKey=3Y1RPaJ-mfLwBkTN43JCeAu9vrQPvzhnW0FXsbKM1ME",
+                    "apiKey=APIKEY",
                     "&q=" + query));
             geoThread.start();
         } catch (MalformedURLException e) {

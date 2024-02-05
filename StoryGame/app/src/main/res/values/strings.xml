@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StoryGame</string>
+    <string name="introduction"><b>Босс:</b> Добро пожаловать в нашу компанию.
+        В основном мы работаем с крипто рынком. Мы готовы предложить
+        тебе стажировку. Начнем с регистрации в системе компании.</string>
+    <string name="name">Введите свое имя</string>
+</resources>
